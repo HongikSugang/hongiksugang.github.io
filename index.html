@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+  <title>홍익수강</title>
+  <meta name="description" content="홍익수강 - 홍익대학교 수강신청 연습">
+  <link rel="shortcut icon" href="/image/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/mainStyle.css">
+</head>
+
+<body>
+  <nav id="topNav">
+    <a href="/" id="logo"></a>
+    <div id="toggleSidebar">
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <aside id="sidebar">
+    <nav id="sideNav">
+      <ul id="sidebarMenu">
+        <li><a href="/about" class="asdf">About</a></li>
+      </ul>
+    </nav>
+    <footer id="sidebarFooter">
+      Copyright © HongikSugang 2019.<br>
+    </footer>
+  </aside>
+  <div id="sideOverlay"></div>
+
+  <main>
+    <section class="sectionWrapper">
+      <a href="/readme" class="sectionLink"></a>
+      <div class="sectionInfo">
+        <header>
+          <h1 class="headline">주의사항</h1>
+          <h2 class="subhead">
+            이용하기 전 꼭 읽어보세요
+          </h2>
+        </header>
+        <h5 class="sectionDate"></h5>
+      </div>
+      <div class="sectionBackground"></div>
+    </section>
+
+    <section class="sectionWrapper">
+      <a href="/engineer/sugang" class="sectionLink"></a>
+      <div class="sectionInfo">
+        <header>
+          <h1 class="headline">공대용</h1>
+          <h2 class="subhead">
+            공과대학 학생이라면 여기를 누르세요
+          </h2>
+        </header>
+        <h5 class="sectionDate"></h5>
+      </div>
+      <div class="sectionBackground"></div>
+    </section>
+
+    <section class="sectionWrapper">
+      <a href="/nonengineer/sugang" class="sectionLink"></a>
+      <div class="sectionInfo">
+        <header>
+          <h1 class="headline">비공대용</h1>
+          <h2 class="subhead">
+            공과대학 학생이 아니라면 여기를 누르세요
+          </h2>
+        </header>
+        <h5 class="sectionDate"></h5>
+      </div>
+      <div class="sectionBackground"></div>
+    </section>
+  </main>
+
+  <script src="/mainApp.js"></script>
+</body>
+
+</html>
