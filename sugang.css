@@ -8,6 +8,19 @@ BODY {
   color: #555555;
 }
 
+#logo {
+  display: inline-block;
+  position: fixed;
+  background-position: center center;
+  background-size: cover;
+  background-image: url(/image/hongiksugang.png);
+  top: 6px;
+  left: 485px;
+  width: 100px;
+  height: 41px;
+  margin: 0;
+}
+
 P, TH, TD, INPUT {
   font-family: 굴림;
   font-size: 12px;

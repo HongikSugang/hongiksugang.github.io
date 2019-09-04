@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이럴수가! - 홍익수강</title>
+  <meta name="author" content="HongikSugang">
+  <meta name="description" content="홍익수강 - 홍익대학교 수강신청 연습">
+  <link rel="shortcut icon" href="/image/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/mainStyle.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146466073-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-146466073-1');
+  </script>
+</head>
+
+<body>
+  <nav id="topNav">
+    <a href="/" id="logo"></a>
+    <div id="toggleSidebar">
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <aside id="sidebar">
+    <nav id="sideNav">
+      <ul id="sidebarMenu">
+        <li><a href="/about">About</a></li>
+      </ul>
+    </nav>
+    <footer id="sidebarFooter">
+      © 2019 HongikSugang<br>
+    </footer>
+  </aside>
+  <div id="sideOverlay"></div>
+
+  <main>
+    <article>
+      <div id="articleInfo">
+        <header>
+          <h1 id="headline" style="color: #3c2484">이럴수가!</h1>
+        </header>
+        <div id="AboutImage" style="background-color: #c8aae4;"></div>
+      </div>
+
+      <section>
+        <h5>저런! 아직 수강신청 기간이 아닙니다. 새로운 모습으로 <span id="htmlMonth"></span>월에 만나요~</h5>
+      </section>
+    </article>
+  </main>
+
+  <script>
+    const htmlMonth = document.querySelector('#htmlMonth');
+    const month = new Date().getMonth();
+    htmlMonth.innerHTML = (0 < month && month < 8) ? 8 : 2;
+  </script>
+  <script src="/mainApp.js"></script>
+</body>
+
+</html>
