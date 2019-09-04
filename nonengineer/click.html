@@ -2,11 +2,26 @@
 <html lang="ko">
 
 <head>
-  <meta http-equiv="Content-Type" content="width=device-width, initial-scale=1.0" charset="utf-8">
+  <meta charset="euc-kr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>비공대생 연습 - 홍익수강</title>
+  <meta name="author" content="HongikSugang">
   <meta name="description" content="홍익수강 - 홍익대학교 수강신청 연습">
   <link rel="shortcut icon" href="/image/favicon.ico" type="image/x-icon">
   <link href="/sugang.css" rel="stylesheet" type="text/css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146466073-1"></script>
+  <script>
+    {
+      const month = new Date().getMonth();
+      if (month != 1 && month != 7) location.replace("/notyet");
+    }
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-146466073-1');
+  </script>
 </head>
 
 <body>
@@ -430,7 +445,7 @@
             <td height="1" bgcolor="#cccccc"></td>
           </tr>
           <tr>
-            <td height=33>&nbsp;&nbsp;2020 홍익대학교 수강신청 연습</td>
+            <td height=33>&nbsp;&nbsp;홍익대학교 수강신청 연습</td>
           </tr>
         </table>
       </td>

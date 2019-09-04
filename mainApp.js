@@ -50,7 +50,7 @@ const fadeOut = function (object, ms) {
 const sidebar = document.querySelector('#sidebar');
 const sideOverlay = document.querySelector('#sideOverlay');
 
-document.querySelector('#toggleSidebar').addEventListener('click', () => {
+document.querySelector('#toggleSidebar').addEventListener('click', function() {
   if (sidebar.style.width == '17rem') {
     sidebar.style.width = 0;
     fadeOut(sideOverlay, 300);
@@ -59,7 +59,7 @@ document.querySelector('#toggleSidebar').addEventListener('click', () => {
     fadeIn(sideOverlay, 300);
   }
 });
-sideOverlay.addEventListener('click', () => {
+sideOverlay.addEventListener('click', function() {
   sidebar.style.width = 0;
   fadeOut(sideOverlay, 300);
 });
