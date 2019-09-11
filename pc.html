@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>이럴수가! - 홍익수강</title>
+  <title>PC실 위치 - 홍익수강</title>
   <meta name="author" content="HongikSugang">
   <meta name="description" content="홍익수강">
   <link rel="shortcut icon" href="/image/favicon.ico" type="image/x-icon">
@@ -12,10 +12,6 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146466073-1"></script>
   <script>
-    {
-      const month = new Date().getMonth();
-      if (month == 1 || month == 7) location.replace("/");
-    }
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
@@ -51,22 +47,35 @@
     <article>
       <div id="articleInfo">
         <header>
-          <h1 id="headline" style="color: #3c2484">이럴수가!</h1>
+          <h1 id="headline">PC실 위치</h1>
         </header>
-        <div id="AboutImage" style="background-color: #c8aae4;"></div>
+        <div id="AboutImage" style="
+        background: #5e2da6;
+        background: linear-gradient(20deg, #5e2da6 0%, #a366d3 55%, #decbef 100%);
+      "></div>
       </div>
 
       <section>
-        <h5>수강신청 기간이 아니에요. 새로운 모습으로 <span id="htmlMonth"></span>월에 만나요~</h5>
+        <img src="/image/map/pc.png" alt="PCmap">
+        <h3>공용 PC실</h3>
+        <h4>개방시간: 월~금 오전 8:50 ~ 오후 8:00</h4>
+        <h5>R524</h5> <h6>홍문관 5층</h6> <br>
+        <h5>R915</h5> <h6>홍문관 9층</h6> <br>
+        <h5>K611</h5> <h6>제1공학관 6층</h6> <br>
+        <h5>Q101</h5> <h6>정보통신센터 1층</h6> <br>
+        <h5>F101</h5> <h6>미술학관 1층</h6> <br>
+        <h5>Z2-601</h5> <h6>이천득관 6층</h6> <br>
+        <h5>C414</h5> <h6>인문사회관 4층</h6> <br>
+
+        <h3>컬러 프린트를 해야 한다면?</h3>
+        <h4>학생회관 1층 (유료)</h4>
+
+        <h3>단과대 전용 PC실</h3>
+        <h4>몰라 알려줘</h4>
       </section>
     </article>
   </main>
 
-  <script>
-    const htmlMonth = document.querySelector('#htmlMonth');
-    const month = new Date().getMonth();
-    htmlMonth.innerHTML = (0 < month && month < 8) ? 8 : 2;
-  </script>
   <script src="/cssjs/mainApp.js"></script>
 </body>
 
