@@ -7,6 +7,12 @@
   <title>학교 지도 - 홍익수강</title>
   <meta name="author" content="HongikSugang">
   <meta name="description" content="홍익수강">
+  <meta name="theme-color" content="#C8AAE4">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="홍익수강">
+  <meta property="og:description" content="홍익대학교 지도">
+  <meta property="og:image" content="/image/hongiksugang.png">
+  <meta property="og:url" content="https://hongiksugang.github.io">
   <link rel="shortcut icon" href="/image/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="/cssjs/mainStyle.css">
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -21,12 +27,13 @@
 </head>
 
 <body>
+  <input type="checkbox" id="toggleMenu">
   <nav id="topNav">
     <a href="/" id="logo"></a>
-    <div id="toggleSidebar">
-      <span></span>
-      <span></span>
-    </div>
+    <label id="toggleSidebar" for="toggleMenu">
+      <span class="wrap"><span class="line"></span></span>
+      <span class="wrap"><span class="line"></span></span>
+    </label>
   </nav>
 
   <aside id="sidebar">
@@ -38,7 +45,7 @@
       </ul>
     </nav>
     <footer id="sidebarFooter">
-      © 2019 HongikSugang<br>
+      © 2019-2020 HongikSugang<br>
     </footer>
   </aside>
   <div id="sideOverlay"></div>
@@ -55,12 +62,12 @@
       </div>
 
       <section>
-        <h3>홍그와트</h3>
+        <h2>홍그와트</h2>
         <p>
-          이곳은 겉모습은 평범해 보이지만, 그 안은 미로처럼 얽혀 있어 주변 지리에 밝은 사람조차 길을 헤매게 만드는 곳이다. 몇몇 탐험가들이 만든 지도가 이곳을 지나다니는 많은 사람이 길을 잃지 않게 해주었으나 오랜 세월이 흘러 이젠 지도를 봐도 알 수 없는 건물과 길이 많이 생겼다. 이에 본인은 이전에 존재하던 지도를 참고하여 이곳의 지도를 새로 만들었다. 그러나, 이 지도 또한 실제와 다른 부분이 있을 수 있다. 이러한 부분을 발견할 경우 제작자에게 알려주거나, 너무 오랜 세월이 지났을 경우 직접 수정하여 다른 사람이 길을 헤매지 않게 도움을 줄 수 있기를 바란다.
-          <b>- 2019년 9월 12일</b>
+          <!-- <b>- 2019년 9월 12일</b> -->
+          꼬부랑 꼬부랑 꼬부랑 꼬부랑
         </p>
-        <h4><a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/open?id=1wxnuPHpsFG_sbWylQS9VuVqmkHiFvlUP">지도 내려받기</a></h4>
+        <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/open?id=1wxnuPHpsFG_sbWylQS9VuVqmkHiFvlUP" id="link">지도 내려받기</a>
         <img src="image/map/lightmap.png" alt="HongikMapLight">
         <img src="image/map/darkmap.png" alt="HongikMapDark">
       </section>

@@ -26,6 +26,6 @@ if (sugangButton) {
     const sec = Math.floor(timeRecorded / 1000);
     const mil = timeRecorded % 1000;
     alert(sec + '.' + mil + '초 걸렸습니다');
-    location.replace('./sugang');
+    history.back()
   });
 }

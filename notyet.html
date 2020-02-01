@@ -7,15 +7,22 @@
   <title>이럴수가! - 홍익수강</title>
   <meta name="author" content="HongikSugang">
   <meta name="description" content="홍익수강">
+  <meta name="theme-color" content="#C8AAE4">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="홍익수강">
+  <meta property="og:description" content="홍익대학교 수강신청 연습">
+  <meta property="og:image" content="/image/hongiksugang.png">
+  <meta property="og:url" content="https://hongiksugang.github.io">
   <link rel="shortcut icon" href="/image/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="/cssjs/mainStyle.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146466073-1"></script>
   <script>
-    {
-      const month = new Date().getMonth();
-      if (month == 1 || month == 7) location.replace("/");
-    }
+    // {
+    //   const month = new Date().getMonth();
+    //   if (month == 1 || month == 7) location.replace("/");
+    // }
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
@@ -25,12 +32,13 @@
 </head>
 
 <body>
+  <input type="checkbox" id="toggleMenu">
   <nav id="topNav">
     <a href="/" id="logo"></a>
-    <div id="toggleSidebar">
-      <span></span>
-      <span></span>
-    </div>
+    <label id="toggleSidebar" for="toggleMenu">
+      <span class="wrap"><span class="line"></span></span>
+      <span class="wrap"><span class="line"></span></span>
+    </label>
   </nav>
 
   <aside id="sidebar">
@@ -42,7 +50,7 @@
       </ul>
     </nav>
     <footer id="sidebarFooter">
-      © 2019 HongikSugang<br>
+      © 2019-2020 HongikSugang<br>
     </footer>
   </aside>
   <div id="sideOverlay"></div>
@@ -57,7 +65,7 @@
       </div>
 
       <section>
-        <h5>수강신청 기간이 아니에요. 새로운 모습으로 <span id="htmlMonth"></span>월에 만나요~</h5>
+        <p>수강신청 기간이 아니에요. 새로운 모습으로 <span id="htmlMonth"></span>월에 만나요~</p>
       </section>
     </article>
   </main>

@@ -7,8 +7,15 @@
   <title>PC실 위치 - 홍익수강</title>
   <meta name="author" content="HongikSugang">
   <meta name="description" content="홍익수강">
+  <meta name="theme-color" content="#C8AAE4">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="홍익수강">
+  <meta property="og:description" content="홍익대학교 PC실 위치">
+  <meta property="og:image" content="/image/hongiksugang.png">
+  <meta property="og:url" content="https://hongiksugang.github.io">
   <link rel="shortcut icon" href="/image/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="/cssjs/mainStyle.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146466073-1"></script>
   <script>
@@ -21,12 +28,13 @@
 </head>
 
 <body>
+  <input type="checkbox" id="toggleMenu">
   <nav id="topNav">
     <a href="/" id="logo"></a>
-    <div id="toggleSidebar">
-      <span></span>
-      <span></span>
-    </div>
+    <label id="toggleSidebar" for="toggleMenu">
+      <span class="wrap"><span class="line"></span></span>
+      <span class="wrap"><span class="line"></span></span>
+    </label>
   </nav>
 
   <aside id="sidebar">
@@ -38,7 +46,7 @@
       </ul>
     </nav>
     <footer id="sidebarFooter">
-      © 2019 HongikSugang<br>
+      © 2019-2020 HongikSugang<br>
     </footer>
   </aside>
   <div id="sideOverlay"></div>
@@ -57,19 +65,19 @@
 
       <section>
         <img src="/image/map/pc.png" alt="PCmap">
-        <h3>공용 PC실</h3>
-        <h4>개방시간: 월~금 오전 8:50 ~ 오후 8:00</h4>
-        <h5>R524</h5> <h6>홍문관 5층</h6> <br>
-        <h5>R915</h5> <h6>홍문관 9층</h6> <br>
-        <h5>K611</h5> <h6>제1공학관 6층</h6> <br>
-        <h5>G6</h5> <h6>학생회관 6층</h6> <br>
-        <h5>Q101</h5> <h6>정보통신센터 1층</h6> <br>
-        <h5>F101</h5> <h6>미술학관 1층</h6> <br>
-        <h5>Z2-601</h5> <h6>이천득관 6층</h6> <br>
-        <h5>C414</h5> <h6>인문사회관 4층</h6> <br>
+        <h2>공용 PC실</h2>
+        <h3>개방시간: 월~금 오전 8:50 ~ 오후 8:00</h3>
+        <h4>R524</h4> <h5>홍문관 5층</h5> <br>
+        <h4>R915</h4> <h5>홍문관 9층</h5> <br>
+        <h4>K611</h4> <h5>제1공학관 6층</h5> <br>
+        <h4>G6</h4> <h5>학생회관 6층</h5> <br>
+        <h4>Q101</h4> <h5>정보통신센터 1층</h5> <br>
+        <h4>F101</h4> <h5>미술학관 1층</h5> <h4>
+        <h4>Z2-601</h4> <h5>이천득관 6층</h5> <h4>
+        <h4>C414</h4> <h5>인문사회관 4층</h5> <br>
 
-        <h3>컬러 프린트를 해야 한다면?</h3>
-        <h4>학생회관 1층 (유료)</h4>
+        <h2>컬러 프린트를 해야 한다면?</h2>
+        <h3>학생회관 1층 (유료)</h3>
       </section>
     </article>
   </main>
