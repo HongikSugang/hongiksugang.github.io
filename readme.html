@@ -7,8 +7,15 @@
   <title>공지사항 - 홍익수강</title>
   <meta name="author" content="HongikSugang">
   <meta name="description" content="홍익수강">
+  <meta name="theme-color" content="#C8AAE4">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="홍익수강">
+  <meta property="og:description" content="홍익수강 공지사항">
+  <meta property="og:image" content="/image/hongiksugang.png">
+  <meta property="og:url" content="https://hongiksugang.github.io">
   <link rel="shortcut icon" href="/image/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="/cssjs/mainStyle.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146466073-1"></script>
   <script>
@@ -21,12 +28,13 @@
 </head>
 
 <body>
+  <input type="checkbox" id="toggleMenu">
   <nav id="topNav">
     <a href="/" id="logo"></a>
-    <div id="toggleSidebar">
-      <span></span>
-      <span></span>
-    </div>
+    <label id="toggleSidebar" for="toggleMenu">
+      <span class="wrap"><span class="line"></span></span>
+      <span class="wrap"><span class="line"></span></span>
+    </label>
   </nav>
 
   <aside id="sidebar">
@@ -38,7 +46,7 @@
       </ul>
     </nav>
     <footer id="sidebarFooter">
-      © 2019 HongikSugang<br>
+      © 2019-2020 HongikSugang<br>
     </footer>
   </aside>
   <div id="sideOverlay"></div>
@@ -56,19 +64,24 @@
       </div>
 
       <section>
-        <h3>홍익수강</h3>
-        <h4>홍익수강은 홍익대학교의 공식 웹사이트가 아닙니다. 실제 수강신청 페이지와 다를 수 있습니다. 이로 인해 발생하는 모든 일에 제작자는 책임지지 않습니다.</h4>
-        <h4>"인터넷 익스플로러" 브라우저와 "사파리" 브라우저에서 사소한 버그가 있습니다. <br>
-          "크롬" 브라우저 이용을 권장드립니다.</h4>
-        <h4>모든 종류의 피드백을 환영합니다. 피드백을 <a href="mailto:hongiksugang@gmail.com">hongiksugang@gmail.com</a> 으로 보내주세요.</h4>
-        <h3>수강신청 연습</h3>
-        <h4>수강신청 연습 페이지는 2월과 8월에만 이용 가능합니다.</h4>
-        <h4>모든 학생은 듣고 싶은 수업을 들을 수 있어야 합니다. 홍익대학교에 충분한 수업 개설을 요구합니다.</h4>
-        <h3>학교 지도</h3>
-        <h4>2011년 홍익대학교 시각디자인과 RRRproject에서 만든 "홍그와트 지도"를 참고하여 만들었습니다.</h4>
-        <h4>실제와 다를 수 있습니다.</h4>
-        <h3>PC실</h3>
-        <h4>실제 PC실 정보와 다를 수 있습니다.</h4>
+        <h2>홍익수강</h2>
+        <p>
+          홍익수강은 홍익대학교의 공식 웹사이트가 아닙니다. 실제 수강신청 페이지와 다를 수 있습니다. 이로 인해 발생하는 모든 일에 제작자는 책임지지 않습니다. <br>
+          "크롬" 브라우저 이용을 권장드립니다. <br>
+          모든 종류의 피드백을 환영합니다. 피드백을 <a href="mailto:hongiksugang@gmail.com">hongiksugang@gmail.com</a> 으로 보내주세요.
+        </p>
+        <h2>수강신청 연습</h2>
+        <p>
+          수강신청 연습 페이지는 2월과 8월에 이용 가능합니다.
+          모든 학생은 듣고 싶은 수업을 들을 수 있어야 합니다. 이 페이지가 없어져도 될 만큼 홍익대학교가 충분히 수업 개설을 하길 바랍니다.
+        </p>
+        <h2>학교 지도</h2>
+        <p>
+          2011년 홍익대학교 시각디자인과 RRRproject에서 만든 "홍그와트 지도"를 참고하여 만들었습니다. <br>
+          실제와 다를 수 있습니다. 다른 부분을 발견하신다면 이메일을 보내주세요.
+        </p>
+        <h2>PC실</h2>
+        <p>실제 PC실 정보와 다를 수 있습니다. 다른 부분을 발견하신다면 이메일을 보내주세요.</p>
       </section>
     </article>
   </main>

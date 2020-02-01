@@ -7,8 +7,16 @@
   <title>About - 홍익수강</title>
   <meta name="author" content="HongikSugang">
   <meta name="description" content="홍익수강">
+  <meta name="theme-color" content="#C8AAE4">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="홍익수강">
+  <meta property="og:description" content="홍익대학교 수강신청 연습">
+  <meta property="og:image" content="/image/hongiksugang.png">
+  <meta property="og:url" content="https://hongiksugang.github.io">
   <link rel="shortcut icon" href="/image/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="/cssjs/mainStyle.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146466073-1"></script>
   <script>
@@ -21,12 +29,13 @@
 </head>
 
 <body>
+  <input type="checkbox" id="toggleMenu">
   <nav id="topNav">
     <a href="/" id="logo"></a>
-    <div id="toggleSidebar">
-      <span></span>
-      <span></span>
-    </div>
+    <label id="toggleSidebar" for="toggleMenu">
+      <span class="wrap"><span class="line"></span></span>
+      <span class="wrap"><span class="line"></span></span>
+    </label>
   </nav>
 
   <aside id="sidebar">
@@ -38,7 +47,7 @@
       </ul>
     </nav>
     <footer id="sidebarFooter">
-      © 2019 HongikSugang<br>
+      © 2019-2020 HongikSugang<br>
     </footer>
   </aside>
   <div id="sideOverlay"></div>
@@ -56,14 +65,20 @@
 
       <section>
         <p>
-          <h6>2019.08.24</h6> <b>~</b> <br>
-          <h6>2019.08.25</h6> <b>수강신청 연습하는 사이트 공개</b> <br>
-          <h6>2019.08.31</h6> <b>홍익수강 시험 버전 제작</b> <br>
-          <h6>2019.09.04</h6> <b>홍익수강 공개</b> <br>
-          <h6>2019.09.12</h6>
-          <b>학교 지도, PC실 위치 추가</b>
-          <h6>2019.09.26</h6>
-          <b>지도 수정</b>
+          <h2 class="date">2019.08.24</h2>
+          <b>~</b> <br>
+          <h2 class="date">2019.08.25</h2>
+          <b>수강신청 연습하는 사이트 공개</b> <br>
+          <h2 class="date">2019.08.31</h2>
+          <b>홍익수강 시험 버전 제작</b> <br>
+          <h2 class="date">2019.09.04</h2>
+          <b>홍익수강 공개</b> <br>
+          <h2 class="date">2019.09.12</h2>
+          <b>학교 지도, PC실 위치 추가</b> <br>
+          <h2 class="date">2019.09.26</h2>
+          <b>지도 수정</b> <br>
+          <h2 class="date">2020.02.01</h2>
+          <b>2020년 1학기 버전 공개</b>
         </p>
       </section>
     </article>
