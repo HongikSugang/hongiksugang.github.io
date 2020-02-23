@@ -23,9 +23,7 @@ if (sugangButton) {
   sugangButton.addEventListener('click', function() {
     time = new Date;
     const timeRecorded = time.getTime() - timeBeforeClick;
-    const sec = Math.floor(timeRecorded / 1000);
-    const mil = timeRecorded % 1000;
-    alert(sec + '.' + mil + '초 걸렸습니다');
+    alert(timeRecorded/1000 + '초 걸렸습니다');
     history.back()
   });
 }
