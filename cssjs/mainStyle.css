@@ -208,9 +208,9 @@ main {
   color: #decbef;
 }
 .sectionWrapper:first-child .sectionBackground {
-  background-image: url(/image/readme.png);
+  background-image: url(/image/readme.jpg);
 }
-.sectionWrapper:last-child .sectionBackground {
+.sectionWrapper:nth-child(2) .sectionBackground {
   background-image: url(/image/black.svg);
 }
 /* .sectionWrapper:nth-child(3) .sectionBackground {
