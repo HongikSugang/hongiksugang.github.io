@@ -8,6 +8,10 @@ BODY {
   color: #555555;
 }
 
+.display-none {
+  display: none;
+}
+
 #logo {
   display: inline-block;
   position: fixed;
