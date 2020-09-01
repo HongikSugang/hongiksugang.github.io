@@ -27,7 +27,7 @@ body {
   background-color: #fbf7fe;
   color: #5e2da6;
   border-bottom: 2px solid #a366d3;
-  z-index: 98;
+  z-index: 4;
 }
 #logo {
   display: inline-block;
@@ -102,6 +102,13 @@ body {
   -webkit-transform: none;
   transition: transform 0.15s cubic-bezier(0.04, 0.04, 0.12, 0.96), -webkit-transform 0.15s cubic-bezier(0.04, 0.04, 0.12, 0.96);
   -webkit-transition: transform 0.15s cubic-bezier(0.04, 0.04, 0.12, 0.96), -webkit-transform 0.15s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+}
+#toggleMenu:checked~#sidebar {
+  width: 17rem;
+}
+#toggleMenu:checked~#sideOverlay {
+  visibility: visible;
+  opacity: 0.3;
 }
 
 /* main */
@@ -201,9 +208,9 @@ main {
   color: #decbef;
 }
 .sectionWrapper:first-child .sectionBackground {
-  background-image: url(/image/readme.png);
+  background-image: url(/image/readme.jpg);
 }
-.sectionWrapper:last-child .sectionBackground {
+.sectionWrapper:nth-child(2) .sectionBackground {
   background-image: url(/image/black.svg);
 }
 /* .sectionWrapper:nth-child(3) .sectionBackground {
@@ -331,12 +338,12 @@ article #bottomFooter h5 {
   overflow-x: hidden;
   margin-top: 5rem;
   background-color: #decbef;
-  -webkit-transition: 0.4s cubic-bezier(0.8, 0.3, 0.1, 1.0);
-  -moz-transition: 0.4s cubic-bezier(0.8, 0.3, 0.1, 1.0);
-  -ms-transition: 0.4s cubic-bezier(0.8, 0.3, 0.1, 1.0);
-  -o-transition: 0.4s cubic-bezier(0.8, 0.3, 0.1, 1.0);
-  transition: 0.4s cubic-bezier(0.8, 0.3, 0.1, 1.0);
-  z-index: 99;
+  -webkit-transition: 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  -moz-transition: 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  -ms-transition: 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  -o-transition: 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  z-index: 5;
 }
 #sidebar #sideNav {
   margin-top: 2rem;
@@ -379,12 +386,15 @@ article #bottomFooter h5 {
 }
 #sideOverlay {
   position: fixed;
+  left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.3);
-  left: 0;
-  z-index: 98;
-  display: none;
+  visibility: hidden;
+  background: black;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  z-index: 4;
 }
 
 @media only screen and (max-width: 800px) {
