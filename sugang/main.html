@@ -20,14 +20,15 @@
   <script defer src="/cssjs/sugang.js"></script>
   <script>
     {
-      const month = new Date().getMonth();
-      if (month != 1 && month != 7) location.replace("/notyet");
+      const month = new Date().getMonth()
+      if (month != 1 && month != 7) location.replace("/notyet")
+      location.replace("/moved")
     }
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+    window.dataLayer = window.dataLayer || []
+    function gtag() { dataLayer.push(arguments) }
+    gtag('js', new Date())
 
-    gtag('config', 'UA-146466073-1');
+    gtag('config', 'UA-146466073-1')
   </script>
 </head>
 
