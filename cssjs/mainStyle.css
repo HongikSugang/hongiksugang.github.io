@@ -128,7 +128,7 @@ main {
   margin: 0 0 2px;
 }
 
-/* .sectionWrapper:first-child {
+.sectionWrapper:first-child {
   width: 100%;
   margin: 0 0 2px 0;
 }
@@ -137,12 +137,12 @@ main {
 }
 .sectionWrapper:nth-child(3) {
   margin-left: 1px;
-} */
+}
 
-.sectionWrapper {
+/* .sectionWrapper {
   width: 100%;
   margin: 0 0 2px 0;
-}
+} */
 
 .sectionWrapper .sectionLink {
   position: absolute;

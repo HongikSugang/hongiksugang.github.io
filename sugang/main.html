@@ -13,16 +13,18 @@
   <meta property="og:image" content="/image/hongiksugang.png">
   <meta property="og:url" content="https://hongiksugang.github.io">
   <link rel="shortcut icon" href="/image/favicon.ico" type="image/x-icon">
-  <link href="/cssjs/sugang.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/cssjs/sugang.css" type="text/css">
+  <link rel="stylesheet" href="/cssjs/mainStyle.css">
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script data-ad-client="ca-pub-9909010355156782" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script data-ad-client="ca-pub-9909010355156782" async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146466073-1"></script>
+  <script defer src="/cssjs/mainApp.js"></script>
   <script defer src="/cssjs/sugang.js"></script>
   <script>
     {
       const month = new Date().getMonth()
       if (month != 1 && month != 7) location.replace("/notyet")
-      location.replace("/moved")
     }
     window.dataLayer = window.dataLayer || []
     function gtag() { dataLayer.push(arguments) }
@@ -33,15 +35,61 @@
 </head>
 
 <body>
+  <div id="moved">
+    <input type="checkbox" id="toggleMenu">
+    <nav id="topNav">
+      <a href="/" id="logo"></a>
+      <label id="toggleSidebar" for="toggleMenu">
+        <span class="wrap"><span class="line"></span></span>
+        <span class="wrap"><span class="line"></span></span>
+      </label>
+    </nav>
 
-  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+    <aside id="sidebar">
+      <nav id="sideNav">
+        <ul id="sidebarMenu">
+          <li><a href="/map">Map</a></li>
+          <li><a href="/pc">PC실</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </nav>
+      <footer id="sidebarFooter">
+        © 2019-<span id="currentYear">2021</span> HongikSugang<br>
+      </footer>
+    </aside>
+    <div id="sideOverlay"></div>
+
+    <main>
+      <article>
+        <div id="articleInfo">
+          <header>
+            <h1 id="headline" style="color: #3c2484">어머!</h1>
+          </header>
+          <!-- <div id="AboutImage" style="background-color: #c8aae4;"></div> -->
+          <div id="AboutImage" style="
+        background: #decbef;
+        background: linear-gradient(20deg, #decbef 0%, #c8aae4 55%, #a366d3 100%);
+      "></div>
+        </div>
+
+        <section>
+          <p>
+            이제 <a target="_blank" rel="noopener noreferrer" href="https://hongiksori.com">홍익소리</a>에서 수강신청 연습을 할
+            수 있어요. <br>
+            홍익소리 이용에 문제가 있는 경우 <a href="" id="go-button">여기</a>를 눌러 계속하세요
+          </p>
+        </section>
+      </article>
+    </main>
+  </div>
+  <table id="sugang" class="display-none" width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
     <tr>
       <td valign=top>
         <table cellspacing="0" cellpadding="0" border="0" width=100%>
           <tr>
             <td height=53 style='padding-left:10px;'>
               <a href="./sugang"><span style='font-size:17px;'><b>홍익대학교 수강신청 연습</b></span></a>
-              <a href="/" id="logo"></a>
+              <a href="/" id="sugang-logo"></a>
             </td>
           </tr>
           <tr height=25 bgcolor="#c8aae4">
@@ -71,7 +119,7 @@
                 <tr height="90">
                   <td height="25" style='padding-left:5px'>
                     <div class="top">올클러님 환영합니다</div>
-                    <div class="top" id="loginTime" style="margin-top:10px;"><b>최근접속:</b> 2019/08/24 07:00:18</div>
+                    <div class="top" style="margin-top:10px;"><b>최근접속: </b><span id="loginTime">2019/08/24 07:00:18</span> </div>
 
                   </td>
                 </tr>
@@ -288,7 +336,7 @@
                         <TR height=50 bgcolor='#eeeeee'>
                           <TH colspan=2>
                             <h3 style="font-size:12px; color:blue;">[이용 방법]</h3>
-                            <p>
+                            <p class="sugang">
                               1. 화면 왼쪽 "담은 과목 수강신청하기" 클릭 <br>
                               2. 표 아래 "수강신청" 버튼 클릭 <br><br>
                               수강신청 버튼을 누르는 데 걸린 시간이 표시됩니다. <br><br>
