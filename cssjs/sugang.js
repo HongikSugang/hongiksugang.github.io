@@ -1,11 +1,7 @@
 (() => {
-  const goButton = document.querySelector('#go-button')
-
   function sugangStart() {
     const failed = document.getElementsByClassName('failed')
     const loginTime = document.querySelector('#loginTime')
-    const moved = document.querySelector('#moved')
-    const sugang = document.querySelector('#sugang')
 
     if (failed) {
       for (let i = 0; i < failed.length; i++) {
@@ -23,8 +19,6 @@
       const seconds = currentTime.getSeconds() < 10 ? ':0' + currentTime.getSeconds() : ':' + currentTime.getSeconds()
       loginTime.textContent = currentTime.getFullYear() + month + date + hours + minutes + seconds
     }
-    moved.remove()
-    sugang.classList.remove('display-none')
   }
 
 
@@ -40,10 +34,6 @@
       win.focus()
     }
   }, 60000)
-  if (goButton) {
-    goButton.addEventListener('click', e => {
-      e.preventDefault()
-      sugangStart()
-    })
-  }
+
+  sugangStart()
 })()
