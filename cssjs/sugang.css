@@ -1,5 +1,5 @@
 #sugang {
-  font-family: 굴림;
+  font-family: ����;
   font-size: 12px;
   line-height: 19px;
   margin: 0;
@@ -27,7 +27,7 @@
 }
 
 #sugang P, #sugang TH, #sugang TD, #sugang INPUT {
-  font-family: 굴림;
+  font-family: ����;
   font-size: 12px;
   line-height: 19px
 }
@@ -49,10 +49,11 @@
 
 .failed {
   cursor: pointer;
+  color: #000000;
 }
 
 #sugang .title {
-  font-family: 궁서;
+  font-family: �ü�;
   font-size: 20px;
   color: red
 }
@@ -66,7 +67,7 @@
 
 #sugang .input {
   border: solid 1 #999999;
-  font-family: 굴림;
+  font-family: ����;
   font-size: 12px;
   color: black;
   background-color: white;
@@ -75,7 +76,7 @@
 
 #sugang .button {
   border: solid 1 #5E5E5E;
-  font-family: 굴림;
+  font-family: ����;
   font-size: 12px;
   color: black;
   background-color: #CCCCCC;
@@ -115,7 +116,7 @@ select {
 #sugang .bar li {
   list-style-image: url("http://emp.hongik.ac.kr/win/images/li-bar.gif");
   list-style-position: inside;
-  font-family: 굴림, 돋움, verdana;
+  font-family: ����, 돋움, verdana;
   font-size: 12px;
   color: #aaa;
   background: url("http://emp.hongik.ac.kr/win/images/line-dot.gif");
