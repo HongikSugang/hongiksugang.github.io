@@ -28,12 +28,12 @@
     const nowDay = nowDatetime.getDay()
     const nowHours = nowDatetime.getHours()
     const nowMinutes = nowDatetime.getMinutes()
-    if (nowDate > 20 && nowDay > 0 && nowDay < 4 && (nowHours == 8 || nowHours == 12) && nowMinutes > 55) {
+    if (nowDate > 20 && nowDay > 0 && nowDay < 6 && (nowHours == 8 || nowHours == 13) && nowMinutes > 58) {
       alert('수강신청 페이지로 이동합니다')
       const win = window.open('https://sugang.hongik.ac.kr', '_blank')
       win.focus()
     }
-  }, 60000)
+  }, 30000)
 
   sugangStart()
 })()
